@@ -8,13 +8,15 @@ app.component('review-list', {
   template:
   /*html*/
   `
-  <div class="container">
+  <div class="review-container">
     <h3>Reviews:</h3>
     <ul>
-      <li v-for="(review, index)" :key="index">
+      <li v-for="(review, index) in reviews" :key="index">
         {{ review.name }} gave this {{ review.rating }} starts.
         <br/>
         "{{review.review}}"
+        <br/>
+        Recommend: {{ review.recommend }}
       </li>
     </ul>
   </div>

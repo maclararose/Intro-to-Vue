@@ -50,9 +50,9 @@ app.component('product-display', {
             Remove Item 
           </button>
         </div>
-      </div>
-      <review-list :reviews="reviews" v-if="reviews.length"></review-list>
-      <review-form @review-submitted="addReview"></review-form>
+        </div>
+        <review-list :reviews="reviews" v-if="reviews.length"></review-list>
+        <review-form @review-submitted="addReview"></review-form>
     </div>`,
   data() {
 		return {
